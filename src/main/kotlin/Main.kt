@@ -12,4 +12,8 @@ fun main(){
         }
         } a square")
     }
+
+
+    val hippo = Hippo();
+    hippo.sleep()
 }
