@@ -1,5 +1,5 @@
 open class Animal {
-    open var image = ""
+    open val image = ""
     open val food = ""
     open val habitat = ""
     open val hunger = 10

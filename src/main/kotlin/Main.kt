@@ -13,7 +13,30 @@ fun main(){
         } a square")
     }
 
-
+//Hippo affair
     val hippo = Hippo();
     hippo.sleep()
+    hippo.makeNoise()
+    hippo.eat()
+
+
+    val zoo = arrayOf(Wolf(),Hippo())
+
+    println("Execute the zoo function")
+    for (anim in zoo){
+            anim.eat()
+            anim.roam()
+    }
+    val animal: Animal = Wolf()
+    //Wolf affair
+    val wolf = Wolf()
+    wolf.makeNoise();
+    wolf.eat()
+    animal.eat()
+
+    //Shot giving to the animal
+
+    val vet = Vet()
+    vet.giveShot(wolf)
+    vet.giveShot(hippo)
 }

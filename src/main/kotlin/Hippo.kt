@@ -11,15 +11,15 @@ class Hippo: Animal() {
     }
     //So to make use of the makeNoise method i need to overide it
     override fun makeNoise(){
-
+        println("Grunt! Grunt")
     }
 
     override fun eat() {
-        super.eat()
+        println("The Hippo is eating food")
     }
 
     override fun roam() {
-        super.roam()
+        println("The Hippo is wandering")
     }
 
 }
