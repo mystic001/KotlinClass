@@ -17,6 +17,7 @@ fun main(){
         }
 
         if(y) flyers[x].fly()
+
         x++
     }
 
