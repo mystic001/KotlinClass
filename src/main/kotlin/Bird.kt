@@ -1,3 +1,3 @@
 class Bird:Flyable {
-    override val x: String = "Eagle";
+    override var x: String = "Eagle";
 }
