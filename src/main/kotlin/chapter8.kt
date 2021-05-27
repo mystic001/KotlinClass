@@ -1,7 +1,6 @@
 fun main(){
-    var w: Wolf? = Wolf()
+    val w: Wolf? = Wolf()
 
-    w = null
     var a : Canine
     val b : Wolf? = Wolf()
     var c : Animal?
@@ -13,12 +12,34 @@ fun main(){
     val s = d?.x ?: "boys"
     val str : String? = "Pizza";
 
+
+    // this is the use of let keyword. and it
+    // Once you’ve established that the value is not null, you can refer to it(w)
+    // in the body of the let using it.
+    w?.let{
+        print("Printing hunger")
+        println(it.hunger)
+    }
+
+
+    val alpha = getWolf(w)
+// Another use of let keyword
+    getWolf(w)?.let{
+        it.eat()
+    }
+
+// Another use of it keyword it refers to the object in context
+    val array = arrayOf("Hi", "Hello",null)
+    for(item in array){
+        if(item == null){
+            println("I am $item")
+        }
+        item?.let { println(it) }
+    }
     println(printingBlue(4))
     println(printlnBlack("yellow"))
     println(res(4.0,6.0))
-
-}
-
+    }
 
 //defining a parameter
 
@@ -29,6 +50,11 @@ fun printlnBlack(color: String?): String? {
     val col = color
 
     return col
+}
+
+
+fun getWolf(wolf: Wolf?): Wolf?{
+    return wolf;
 }
 
 
