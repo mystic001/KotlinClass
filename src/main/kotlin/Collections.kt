@@ -1,0 +1,18 @@
+fun main(){
+    val mShoppingList = mutableListOf("Tea","Eggs","Milk")
+    println("mShoppingList original: $mShoppingList")
+    val extraShopping = listOf("Cookies","Sugar","Eggs")
+    mShoppingList.addAll(extraShopping)
+    println("mShoppingList original: $mShoppingList")
+    if(mShoppingList.contains("Tea")) mShoppingList.set(mShoppingList.indexOf("Tea"),"Coffee")
+    mShoppingList.sort()
+    println("mShoppingList sorted: $mShoppingList")
+    mShoppingList.reversed()
+    println("mShoppingList reversed: $mShoppingList")
+    mShoppingList.reverse()
+    println("mShoppingList reverse: $mShoppingList")
+    val mShoppingSet = mShoppingList.toMutableSet()
+    println("mShoppingList reverse: $mShoppingSet")
+    println()
+    println("Code mangnet starts here")
+}

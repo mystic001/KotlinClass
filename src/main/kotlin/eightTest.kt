@@ -1,3 +1,5 @@
+import java.lang.NumberFormatException
+
 class WolfOne {
      var hunger = 10
     val food = "meat"
@@ -51,5 +53,19 @@ fun main(){
 
     w = null
 
+    myFunction("School")
+
+}
+
+fun myFunction(str:String){
+
+    try{
+        val x = str.toInt()
+    }catch(e: NumberFormatException){
+
+        println("55")
+    }
+
+    println("myfunction has ended")
 
 }
